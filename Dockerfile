@@ -1,6 +1,6 @@
 FROM java:8-jdk
 
-RUN apt-get update && apt-get install -y wget git curl zip python-pip \
+RUN apt-get update && apt-get install -y wget git curl zip python3 python-pip \
   python-dev build-essential vim
 
 RUN pip install --upgrade pip
