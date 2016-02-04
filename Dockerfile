@@ -1,7 +1,7 @@
 FROM java:8-jdk
 
 RUN apt-get update && apt-get install -y wget git curl zip python-pip \
-  python-dev build-essential vim && rm -rf /var/lib/apt/lists/*
+  python-dev build-essential vim
 
 RUN pip install --upgrade pip
 RUN pip install --upgrade virtualenv
